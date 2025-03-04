@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>St. Anthony Store</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+
+  <body>
+    <header></header>
+
+    <section class="category conteudo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-3">
+            <h6 class="fw-bold">CATEGORY</h6>
+            <div class="list-group" id="category-list">
+              <label class="list-group-item border-0">
+                <input
+                  class="form-check-input me-1"
+                  type="radio"
+                  name="category"
+                  value="all-products"
+                />
+                All Products
+              </label>
+            </div>
+          </div>
+
+          <div class="col-md-8 col-lg-9">
+            <div class="row g-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const categoryList = document.getElementById("category-list");
+        const productsContainer = document.querySelector(".row.g-3");
+
+        if (!categoryList || !productsContainer) {
+          console.error("Erro: Elementos não encontrados na DOM.");
+          return;
+        }
+
+        let products = [];
+        let categories = [];
+
+        function renderProducts(products) {
+          productsContainer.innerHTML = "";
+          if (products.length === 0) {
+            productsContainer.innerHTML = `<p class="text-center">No products found.</p>`;
+            return;
+          }
+
+          products.forEach((product) => {
+            const productCard = document.createElement("div");
+            productCard.className = "col-md-3";
+
+            const category = categories.find(
+              (category) => category.id === product.categoria_id
+            );
+
+            const productTitle = product.title ? product.title : category.name;
+
+            productCard.innerHTML = `
+        <div class="card p-2 border rounded">
+          <a href="product.html?id=${product.id}" class="text-dark text-decoration-none">
+            <div class="card-body">
+              <img src="${product.image}" alt="Product Image" class="img-fluid">
+              <h6 class="card-title">${productTitle}</h6>
+            </div>
+          </a>
+        </div>
+      `;
+            productsContainer.appendChild(productCard);
+          });
+        }
+
+        function getCategoryFromURL() {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get("id") || "all-products";
+        }
+
+        function updateURL(categoryId) {
+          const newUrl =
+            categoryId === "all-products"
+              ? window.location.pathname
+              : `${window.location.pathname}?id=${categoryId}`;
+          history.pushState({}, "", newUrl);
+        }
+
+        axios
+          .get("jsons/categorias.json")
+          .then((response) => {
+            categories = response.data;
+
+            categories.forEach((category) => {
+              if (category.id < 10) {
+                const label = document.createElement("label");
+                label.className = "list-group-item border-0";
+                label.innerHTML = `
+          <input class="form-check-input me-1" type="radio" name="category" value="${category.id}" />
+          ${category.name}
+          `;
+                categoryList.appendChild(label);
+              }
+            });
+
+            const selectedCategory = getCategoryFromURL();
+            const categoryInput = document.querySelector(
+              `input[value="${selectedCategory}"]`
+            );
+            if (categoryInput) {
+              categoryInput.checked = true;
+            } else {
+              document.querySelector(
+                `input[value="all-products"]`
+              ).checked = true;
+            }
+          })
+          .catch((error) =>
+            console.error("Erro ao carregar categorias:", error)
+          );
+
+        axios
+          .get("jsons/produtos.json")
+          .then((response) => {
+            products = response.data;
+
+            const selectedCategory = getCategoryFromURL();
+            if (selectedCategory !== "all-products") {
+              renderProducts(
+                products.filter(
+                  (product) => product.categoria_id == selectedCategory
+                )
+              );
+            } else {
+              renderProducts(products);
+            }
+          })
+          .catch((error) => console.error("Erro ao carregar produtos:", error));
+
+        categoryList.addEventListener("change", (event) => {
+          const selectedCategory = event.target.value;
+          updateURL(selectedCategory);
+
+          if (selectedCategory === "all-products") {
+            renderProducts(products);
+          } else {
+            renderProducts(
+              products.filter(
+                (product) => product.categoria_id == selectedCategory
+              )
+            );
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
