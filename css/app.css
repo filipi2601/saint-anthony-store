@@ -236,6 +236,13 @@ nav form button {
   padding: 10px 20px;
   border-radius: 4px;
   text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.promo-btn:hover {
+  opacity: 0.8;
+  color: #fff;
 }
 .promo-btn i {
   margin-left: 5px;

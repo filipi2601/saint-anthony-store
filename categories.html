@@ -136,6 +136,8 @@
           .then((response) => {
             products = response.data;
 
+            products.sort((a, b) => a.categoria_id - b.categoria_id);
+
             const selectedCategory = getCategoryFromURL();
             if (selectedCategory !== "all-products") {
               renderProducts(

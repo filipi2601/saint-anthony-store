@@ -221,5 +221,110 @@
     "categoria_id": 21,
     "title": "The Golden Fleece - Padraic Colum and The Adventures of Odysseus and the tale of Troy - Padraic Colum",
     "image": "../img/youth-literature/3.webp"
+  },
+  {
+    "id": 43,
+    "categoria_id": 3,
+    "image": "../img/literature/1.webp"
+  },
+  {
+    "id": 44,
+    "categoria_id": 3,
+    "image": "../img/literature/2.webp"
+  },
+  {
+    "id": 45,
+    "categoria_id": 3,
+    "image": "../img/literature/3.webp"
+  },
+  {
+    "id": 46,
+    "categoria_id": 3,
+    "image": "../img/literature/4.webp"
+  },
+  {
+    "id": 47,
+    "categoria_id": 3,
+    "image": "../img/literature/5.webp"
+  },
+  {
+    "id": 48,
+    "categoria_id": 3,
+    "image": "../img/literature/6.webp"
+  },
+  {
+    "id": 49,
+    "categoria_id": 3,
+    "image": "../img/literature/7.webp"
+  },
+  {
+    "id": 50,
+    "categoria_id": 3,
+    "image": "../img/literature/8.webp"
+  },
+  {
+    "id": 51,
+    "categoria_id": 3,
+    "image": "../img/literature/9.webp"
+  },
+  {
+    "id": 52,
+    "categoria_id": 15,
+    "image": "../img/icons/4.webp"
+  },
+  {
+    "id": 53,
+    "categoria_id": 15,
+    "image": "../img/icons/5.webp"
+  },
+  {
+    "id": 54,
+    "categoria_id": 15,
+    "image": "../img/icons/6.webp"
+  },
+  {
+    "id": 55,
+    "categoria_id": 15,
+    "image": "../img/icons/7.webp"
+  },
+  {
+    "id": 56,
+    "categoria_id": 15,
+    "image": "../img/icons/8.webp"
+  },
+  {
+    "id": 57,
+    "categoria_id": 15,
+    "image": "../img/icons/9.webp"
+  },
+  {
+    "id": 58,
+    "categoria_id": 15,
+    "image": "../img/icons/10.webp"
+  },
+  {
+    "id": 59,
+    "categoria_id": 15,
+    "image": "../img/icons/11.webp"
+  },
+  {
+    "id": 60,
+    "categoria_id": 15,
+    "image": "../img/icons/12.webp"
+  },
+  {
+    "id": 61,
+    "categoria_id": 15,
+    "image": "../img/icons/13.webp"
+  },
+  {
+    "id": 62,
+    "categoria_id": 15,
+    "image": "../img/icons/14.webp"
+  },
+  {
+    "id": 63,
+    "categoria_id": 15,
+    "image": "../img/icons/15.webp"
   }
 ]
