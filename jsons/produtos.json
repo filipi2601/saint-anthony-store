@@ -326,5 +326,15 @@
     "id": 63,
     "categoria_id": 15,
     "image": "../img/icons/15.webp"
+  },
+  {
+    "id": 64,
+    "categoria_id": 15,
+    "image": "../img/icons/16.webp"
+  },
+  {
+    "id": 65,
+    "categoria_id": 21,
+    "image": "../img/youth-literature/4.webp"
   }
 ]

@@ -181,14 +181,27 @@ nav form button {
   width: 100%;
   object-fit: cover;
   border-radius: 0.25rem;
+  transition: all 0.5s;
+}
+
+.best-sellers img:hover {
+  transform: scale(1.25);
+  transition: all 0.5s;
 }
 
 #categorias-carousel img,
 .produtos img {
-  height: 10rem;
+  height: 15rem;
   width: 100%;
   object-fit: cover;
   border-radius: 0.35rem;
+  transition: all 0.5s;
+}
+
+#categorias-carousel img:hover,
+.produtos img:hover {
+  transform: scale(1.25);
+  transition: all 0.5s;
 }
 
 #categorias-carousel .splide__pagination__page.is-active {
@@ -307,11 +320,17 @@ nav form button {
 }
 
 .category .card img {
-  width: 200px;
-  height: 10rem;
+  width: 100%;
+  height: 15rem;
   object-fit: cover;
   border-radius: 0.35rem;
   margin-bottom: 0.5rem;
+  transition: all 0.5s;
+}
+
+.category .card img:hover {
+  transform: scale(1.25);
+  transition: all 0.5s;
 }
 /* PRODUTO */
 .produto img {
