@@ -23,5 +23,7 @@
   { "id": 18, "slug": "prayers-cards", "name": "Prayers Cards" },
   { "id": 19, "slug": "rosary", "name": "Rosary" },
   { "id": 20, "slug": "scapulars", "name": "Scapulars" },
-  { "id": 21, "slug": "youth-literature", "name": "Youth Literature" }
+  { "id": 21, "slug": "youth-literature", "name": "Youth Literature" },
+  { "id": 22, "slug": "cross", "name": "Cross" },
+  { "id": 23, "slug": "statues", "name": "Statues" }
 ]

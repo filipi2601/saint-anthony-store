@@ -2,7 +2,6 @@
   {
     "id": 1,
     "categoria_id": 10,
-    "title": "Catholic Children's Bible",
     "image": "../img/baptism-gifts/1.webp"
   },
   {
@@ -43,6 +42,7 @@
   {
     "id": 9,
     "categoria_id": 10,
+    "title": "Catholic Children's Bible",
     "image": "../img/baptism-gifts/9.webp"
   },
   {
@@ -58,13 +58,13 @@
   {
     "id": 12,
     "categoria_id": 4,
-    "title": "Illustrated Catholic Children Bible",
+    "title": "The Holy Bible adapted for Young Readers",
     "image": "../img/children-bible/1.webp"
   },
   {
     "id": 13,
     "categoria_id": 21,
-    "title": "The Holy Bible adapted for Young Readers",
+    "title": "Illustrated Catholic Children's Bible",
     "image": "../img/children-bible/2.webp"
   },
   {
@@ -82,32 +82,26 @@
   {
     "id": 16,
     "categoria_id": 4,
-    "title": "A Life of Our Lord for Children",
+    "title": "Noah and the Ark - Tomie de Paola",
     "image": "../img/children-books/3.webp"
   },
   {
     "id": 17,
     "categoria_id": 4,
-    "title": "Noah and the Ark - Tomie de Paola",
+    "title": "Sixty Saints - Joan Windham",
     "image": "../img/children-books/4.webp"
   },
   {
     "id": 18,
     "categoria_id": 4,
-    "title": "Sixty Saints - Joan Windham",
+    "title": "My name is Philomena",
     "image": "../img/children-books/5.webp"
   },
   {
     "id": 19,
     "categoria_id": 4,
-    "title": "My name is Philomena",
-    "image": "../img/children-books/6.webp"
-  },
-  {
-    "id": 20,
-    "categoria_id": 4,
     "title": "Take it to the Queen",
-    "image": "../img/children-books/7.webp"
+    "image": "../img/children-books/6.webp"
   },
   {
     "id": 21,
@@ -207,13 +201,13 @@
   {
     "id": 40,
     "categoria_id": 21,
-    "title": "The Spear - Ignatius and The Black Arrow - Robert Louis Stevenson",
+    "title": "The Spear",
     "image": "../img/youth-literature/1.webp"
   },
   {
     "id": 41,
     "categoria_id": 21,
-    "title": "The Saints Chronicles",
+    "title": "The Black Arrow",
     "image": "../img/youth-literature/2.webp"
   },
   {
@@ -225,46 +219,55 @@
   {
     "id": 43,
     "categoria_id": 3,
+    "title": "The Princess and Curdle",
     "image": "../img/literature/1.webp"
   },
   {
     "id": 44,
     "categoria_id": 3,
+    "title": "The Adventures of Odysseus and the Tale of Troy",
     "image": "../img/literature/2.webp"
   },
   {
     "id": 45,
     "categoria_id": 3,
+    "title": "The Black Arrow",
     "image": "../img/literature/3.webp"
   },
   {
     "id": 46,
     "categoria_id": 3,
+    "title": "Catherine of Siena",
     "image": "../img/literature/4.webp"
   },
   {
     "id": 47,
     "categoria_id": 3,
+    "title": "The Strange Children",
     "image": "../img/literature/5.webp"
   },
   {
     "id": 48,
     "categoria_id": 3,
+    "title": "The Veil of Veronica",
     "image": "../img/literature/6.webp"
   },
   {
     "id": 49,
     "categoria_id": 3,
+    "title": "The Faithful Wife",
     "image": "../img/literature/7.webp"
   },
   {
     "id": 50,
     "categoria_id": 3,
+    "title": "Decline and Fall",
     "image": "../img/literature/8.webp"
   },
   {
     "id": 51,
     "categoria_id": 3,
+    "title": "Kristin Lavransdatter",
     "image": "../img/literature/9.webp"
   },
   {
@@ -278,63 +281,49 @@
     "image": "../img/icons/5.webp"
   },
   {
-    "id": 54,
-    "categoria_id": 15,
-    "image": "../img/icons/6.webp"
-  },
-  {
-    "id": 55,
-    "categoria_id": 15,
-    "image": "../img/icons/7.webp"
-  },
-  {
-    "id": 56,
-    "categoria_id": 15,
-    "image": "../img/icons/8.webp"
-  },
-  {
-    "id": 57,
-    "categoria_id": 15,
-    "image": "../img/icons/9.webp"
-  },
-  {
-    "id": 58,
-    "categoria_id": 15,
-    "image": "../img/icons/10.webp"
-  },
-  {
-    "id": 59,
-    "categoria_id": 15,
-    "image": "../img/icons/11.webp"
-  },
-  {
-    "id": 60,
-    "categoria_id": 15,
-    "image": "../img/icons/12.webp"
-  },
-  {
-    "id": 61,
-    "categoria_id": 15,
-    "image": "../img/icons/13.webp"
-  },
-  {
-    "id": 62,
-    "categoria_id": 15,
-    "image": "../img/icons/14.webp"
-  },
-  {
-    "id": 63,
-    "categoria_id": 15,
-    "image": "../img/icons/15.webp"
-  },
-  {
-    "id": 64,
-    "categoria_id": 15,
-    "image": "../img/icons/16.webp"
-  },
-  {
     "id": 65,
     "categoria_id": 21,
+    "title": "The Saints Chronicles",
     "image": "../img/youth-literature/4.webp"
+  },
+  {
+    "id": 66,
+    "categoria_id": 22,
+    "image": "../img/cross/1.webp"
+  },
+  {
+    "id": 67,
+    "categoria_id": 23,
+    "image": "../img/statues/1.webp"
+  },
+  {
+    "id": 68,
+    "categoria_id": 23,
+    "image": "../img/statues/2.webp"
+  },
+  {
+    "id": 69,
+    "categoria_id": 23,
+    "image": "../img/statues/3.webp"
+  },
+  {
+    "id": 70,
+    "categoria_id": 23,
+    "image": "../img/statues/4.webp"
+  },
+  {
+    "id": 71,
+    "categoria_id": 23,
+    "image": "../img/statues/5.webp"
+  },
+  {
+    "id": 72,
+    "categoria_id": 23,
+    "image": "../img/statues/6.webp"
+  },
+  {
+    "id": 73,
+    "categoria_id": 23,
+    "image": "../img/statues/7.webp"
   }
 ]
