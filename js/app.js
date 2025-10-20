@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  axios.get("./../includes/header.html").then((response) => {
+  axios.get("./includes/header.html").then((response) => {
     document.getElementsByTagName("header")[0].innerHTML = response.data;
   });
 
-  axios.get("./../includes/footer.html").then((response) => {
+  axios.get("./includes/footer.html").then((response) => {
     document.getElementsByTagName("footer")[0].innerHTML = response.data;
   });
 
