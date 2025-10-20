@@ -81,6 +81,11 @@ body {
 nav {
   background: linear-gradient(to bottom, var(--corPrimaria) 40%, #fff 41%);
   padding: 15px 0;
+  padding-top: 0 !important;
+}
+
+.navbar-brand {
+  padding-top: 0 !important;
 }
 
 /* INDEX */
@@ -99,6 +104,7 @@ nav {
 
 .fatima h2 {
   font-size: 28px;
+  text-align: justify;
 }
 
 .upcoming-events h1 {
