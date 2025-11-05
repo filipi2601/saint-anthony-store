@@ -79,9 +79,25 @@ body {
 
 /* HEADER */
 nav {
-  background: linear-gradient(to bottom, var(--corPrimaria) 40%, #fff 41%);
-  padding: 15px 0;
-  padding-top: 0 !important;
+  background-color: var(--corPrimaria);
+  padding: 20px 0 !important;
+}
+
+
+@media screen and (min-width: 992px) {
+  
+  a.navbar-brand {
+    position: absolute;
+  }
+  .capa {
+    padding-top: 10rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  nav {
+    padding-top: 0 !important;
+    background: linear-gradient(to bottom, var(--corPrimaria) 40%, #fff 41%);
+  }
 }
 
 .navbar-brand {
@@ -89,12 +105,6 @@ nav {
 }
 
 /* INDEX */
-.capa-img {
-  border-top-left-radius: 15rem;
-  border-top-right-radius: 15rem;
-  border: 1px solid var(--corPrimaria);
-}
-
 .fatima {
   background: var(--corPrimaria);
   color: #fff;
